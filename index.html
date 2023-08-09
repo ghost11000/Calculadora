@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK A CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- LINK A FONTSISE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Tektur&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div class="container-padre">
+        <div class="container-hijo">
+            <h1>Calculadora CodeRi</h1>
+            <!-- NUMERO 1-->
+            <input type="text" id="display">
+            <div>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('+')">+</button>
+            </div>
+            <div>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('-')">-</button>
+            </div>
+            <div>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('*')">*</button>
+            </div>
+            <div>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="clearToDisplay()">C</button>
+                <button onclick="calculateResult()">=</button>
+                <button onclick="appendToDisplay('/')">/</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
